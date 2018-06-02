@@ -29,7 +29,7 @@ typedef struct url_st {
     TCHAR query[BUF_LEN];
     TCHAR fragment[BUF_LEN];
     unsigned short port;
-} URL;
+} URL_T;
 
 
 const char *dayOfWeek[] = {
@@ -45,7 +45,7 @@ const char *dayOfWeek[] = {
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-    URL iftttUrl = {
+    URL_T iftttUrl = {
         _T("maker.ifttt.com"),
         _T("/trigger/{event}/with/key/{secret key}"),
         _T(""),
